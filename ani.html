@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas</title>
+    <!-- <link rel="stylesheet" href="canvas.js" /> -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+      }
+      #canvas {
+        background-color: rgb(170, 159, 159);
+        border-radius: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400">
+      <!-- <img src="images/style.jpg" alt="access denied" id="girl" /> -->
+      <button type="button" value="restart" onClick="reloads()">restart</button>
+    </canvas>
+    <script src="pingpong.js">
+      function reloads(){
+        window.Location.reload(true);
+      }
+    </script>
+    <!-- <script src="canavs.js"></script> -->
+  </body>
+</html>
